@@ -150,8 +150,9 @@ nav {
 
 /* Hero Section */
 .hero {
-    padding: 60px 20px;
-    margin: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px calc(20px + 2rem);
     text-align: center;
 }
 
