@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureLearn - Siber Güvenlik Öğren</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" onclick="showPage('home')">
+                <span>SecureLearn</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" onclick="showPage('home'); return false;">Ana Sayfa</a></li>
+                <li><a href="#" onclick="showPage('about'); return false;">Hakkımızda</a></li>
+                <li><a href="#" onclick="showPage('help'); return false;">Yardım</a></li>
+                <li><a href="#" onclick="showPage('contact'); return false;">İletişim</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="btn btn-login" onclick="alert('Giriş sayfası')">Giriş Yap</button>
+                <button class="btn btn-start" onclick="alert('Başlangıç')">Başla</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <div class="hero">
+            <div class="hero-container">
+                <div class="hero-visual">🛡️</div>
+                <div class="hero-text">
+                    <h1>Siber Güvenliği Eğlenceli Bir Şekilde Öğren</h1>
+                    <p>Günde 5 dakikada güvenli interneti öğren. Eğlenceli, ücretsiz ve etkili.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-blue" onclick="alert('Ücretsiz başlayacaksınız')">Ücretsiz Başla</button>
+                        <button class="btn btn-outline" onclick="showPage('about')">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section-title">
+                <h2>Ne Öğrenebilirsin?</h2>
+                <p>En önemli siber güvenlik konuları</p>
+            </div>
+
+            <div class="courses-grid">
+                <div class="course-card green">
+                    <div class="course-icon">🔐</div>
+                    <div class="course-info">
+                        <h3>Parola Güvenliği</h3>
+                        <p>Güçlü parolalar oluştur ve hakilere karşı koru.</p>
+                    </div>
+                </div>
+                <div class="course-card blue">
+                    <div class="course-icon">🎣</div>
+                    <div class="course-info">
+                        <h3>Kimlik Avı (Phishing)</h3>
+                        <p>Şüpheli e-postaları ve siteyi tanı.</p>
+                    </div>
+                </div>
+                <div class="course-card orange">
+                    <div class="course-icon">🦠</div>
+                    <div class="course-info">
+                        <h3>Kötü Amaçlı Yazılım</h3>
+                        <p>Virüslerden ve trojan atından korun.</p>
+                    </div>
+                </div>
+                <div class="course-card pink">
+                    <div class="course-icon">📱</div>
+                    <div class="course-info">
+                        <h3>Mobil Güvenlik</h3>
+                        <p>Telefonunu ve tabletini güvenli tut.</p>
+                    </div>
+                </div>
+                <div class="course-card green">
+                    <div class="course-icon">🌐</div>
+                    <div class="course-info">
+                        <h3>Web Güvenliği</h3>
+                        <p>İnternet taraması güvenli hale getir.</p>
+                    </div>
+                </div>
+                <div class="course-card blue">
+                    <div class="course-icon">🛡️</div>
+                    <div class="course-info">
+                        <h3>Veri Koruma</h3>
+                        <p>Kişisel bilgilerini saygılı tut.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>2M+</h3>
+                    <p>Öğrenci</p>
+                </div>
+                <div class="stat-item">
+                    <h3>150+</h3>
+                    <p>Ders</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p>Soru</p>
+                </div>
+                <div class="stat-item">
+                    <h3>25</h3>
+                    <p>Dil</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="about-section">
+                <div class="about-text">
+                    <h3>🎮 Eğlenceli Öğrenme</h3>
+                    <p>SecureLearn ile öğrenme eğlenceli ve oyunlaştırılmış. Her tamamlanan derste puan kazan, rozet açabilir ve arkadaşlarınızla yarış.</p>
+                    <p>Günde sadece 5 dakika çalışmanız yeterli. Araştırmalar, tutarlı kısa çalışmaların daha etkili olduğunu göstermektedir.</p>
+                </div>
+                <div class="about-visual">🎯</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section-title">
+                <h2>Neden SecureLearn?</h2>
+                <p>Diğer platformlardan farklıyız</p>
+            </div>
+
+            <div class="features-list">
+                <div class="feature-item">
+                    <div class="feature-icon">💚</div>
+                    <div class="feature-text">
+                        <h4>Tamamen Ücretsiz</h4>
+                        <p>Tüm kurslar ve öğrenme materyalleri ücretsizdir. İlave ödeme yapmanıza gerek yok.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <div class="feature-text">
+                        <h4>Kanıtlanmış Etkililik</h4>
+                        <p>SecureLearn öğrencileri, geleneksel yöntemlerle öğrenenlere göre % 40 daha hızlı ilerliyor.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌍</div>
+                    <div class="feature-text">
+                        <h4>Küresel Topluluk</h4>
+                        <p>190+ ülkede milyonlarca öğrenciyle bağlı ol ve birlikte öğren.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <div class="feature-text">
+                        <h4>Mobil ve Web</h4>
+                        <p>iOS, Android ve web üzerinde öğren. İlerleme her cihazda senkronize olur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <div class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Hakkımızda</h1>
+                    <p>SecureLearn, siber güvenliği herkes için erişilebilir hale getirmek için kurulmuştur.</p>
+                </div>
+                <div class="hero-visual">🌟</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="about-section">
+                <div class="about-text">
+                    <h3>🎯 Misyonumuz</h3>
+                    <p>SecureLearn, siber güvenlik eğitimini yaş, geçmiş veya teknik bilgi fark etmeksizin herkesin erişebileceği, uygun fiyatlı ve etkili hale getirmek için kurulmuştur.</p>
+                    <p>2015'te başladığımız bu yolculukta, şu anda 190 ülkede 2 milyondan fazla öğrenciye hizmet veriyoruz.</p>
+                    <p>Kurumlar ve hükümetler SecureLearn'i siber güvenlik farkındalığını artırmak için kullanmaktadır.</p>
+                </div>
+                <div class="about-visual">🚀</div>
+            </div>
+
+            <div style="margin: 80px 0; padding: 40px; background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%); border-radius: 16px; color: white; text-align: center;">
+                <h3 style="font-size: 24px; margin-bottom: 30px;">Takımımız</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+                    <div>
+                        <div style="font-size: 50px; margin-bottom: 10px;">👨‍💻</div>
+                        <div style="font-weight: 700;">Güvenlik Uzmanları</div>
+                        <div style="font-size: 13px; opacity: 0.9;">Etik hackerlar ve penetrasyon test uzmanları</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 50px; margin-bottom: 10px;">👩‍🏫</div>
+                        <div style="font-weight: 700;">Eğitim Profesyonelleri</div>
+                        <div style="font-size: 13px; opacity: 0.9;">Karmaşık kavramları basitleştiren öğretmenler</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 50px; margin-bottom: 10px;">💻</div>
+                        <div style="font-weight: 700;">Yazılım Mühendisleri</div>
+                        <div style="font-size: 13px; opacity: 0.9;">Güvenli ve hızlı platform oluşturuyoruz</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help Page -->
+    <div id="help" class="page">
+        <div class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Yardım Merkezi</h1>
+                    <p>Sorularının cevaplarını bul</p>
+                </div>
+                <div class="hero-visual">❓</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section-title">
+                <h2>Sık Sorulan Sorular</h2>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>SecureLearn nedir?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        SecureLearn, siber güvenliği eğlenceli ve etkili bir şekilde öğreten eğitim platformudur. Günde 5 dakikalık derslerle, oyunlaştırmanın gücü sayesinde herkes siber güvenlik uzmanı olabilir.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Kaç para tutuyor?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        SecureLearn tamamen ücretsizdir! Tüm kurslar, dersler ve öğrenme materyalleri her kişiye açıktur. Hiçbir gizli ücret yoktur.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Mobil uygulaması var mı?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Evet! SecureLearn iOS ve Android uygulamaları mevcuttur. Uygulamalar ile çevrimdışı ders yapabilir ve ilerleme buluta kaydedilir.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Sertifikat alabilir miyim?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Evet! Kursları tamamladıkça sertifikalar kazanabilirsin. Sertifikalarını LinkedIn'de paylaş ve işverenlere göster.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Kurumsal hesap oluşturabilir miyim?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Evet! Okullar, işletmeler ve kuruluşlar SecureLearn for Schools ve SecureLearn for Business ürünlerini kullanabilir.
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px; padding: 40px; background: var(--gray-light); border-radius: 12px; text-align: center;">
+                <h3 style="font-weight: 700; color: var(--text); margin-bottom: 15px;">Başka Sorularınız mı Var?</h3>
+                <p style="color: var(--gray-text); margin-bottom: 25px;">Destek ekibimiz her zaman yardımcı olmaya hazırdır.</p>
+                <button class="btn btn-blue" onclick="showPage('contact')" style="padding: 12px 28px;">Bize İletişime Geç</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <div class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>İletişime Geç</h1>
+                    <p>Sorular, geri bildirim veya iş birliği için bize ulaş</p>
+                </div>
+                <div class="hero-visual">💬</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="contact-form">
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Ad Soyad</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-posta</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Konu</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mesaj</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-blue" style="width: 100%; padding: 14px;">Gönder</button>
+                </form>
+            </div>
+
+            <div style="margin-top: 80px;">
+                <div class="section-title">
+                    <h2>Diğer İletişim Yolları</h2>
+                </div>
+
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-icon">📧</div>
+                        <div class="course-info">
+                            <h3>E-posta</h3>
+                            <p><a href="mailto:support@securelearn.com" style="color: var(--green); text-decoration: none; font-weight: 600;">support@securelearn.com</a></p>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-icon">💬</div>
+                        <div class="course-info">
+                            <h3>Canlı Sohbet</h3>
+                            <p>Hafta içi 9:00-18:00 saatleri arasında bulunabilirsin</p>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-icon">🐦</div>
+                        <div class="course-info">
+                            <h3>Sosyal Medya</h3>
+                            <p>@SecureLearn - Twitter, Facebook, Instagram</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Community Rules Page -->
+    <div id="community" class="page">
+        <div class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Topluluk Kuralları</h1>
+                    <p>Herkes için güvenli ve saygılı bir ortam oluşturmak için</p>
+                </div>
+                <div class="hero-visual">🤝</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section-title">
+                <h2>Topluluk Kurallarımız</h2>
+            </div>
+
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <div class="rule-number">1</div>
+                    <h3>Saygılı Davran</h3>
+                    <p>Herkeye saygı duyarak davran. Cinsiyet, ırk, dil, din fark etmeksizin eşit davran.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-number">2</div>
+                    <h3>Spam Yapma</h3>
+                    <p>Spam, kötü amaçlı bağlantılar, dolandırıcılık veya abusif davranış yasaktır.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-number">3</div>
+                    <h3>Birbirini Yardımcı Ol</h3>
+                    <p>Diğer öğrencilerle sorularını ve zorlukları paylaş. Ama cevapları doğrudan verme.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-number">4</div>
+                    <h3>Gerçek İsim Kullan</h3>
+                    <p>Kimliğini doğrula. Sahte profiller ve kimlik avı engellenmektedir.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-number">5</div>
+                    <h3>Öğrenmeye Açık Ol</h3>
+                    <p>Başkalarının perspektiflerine açık ol. Öğrenmeyi ve büyümeyi sever.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-number">6</div>
+                    <h3>Reklam Yapma</h3>
+                    <p>Ticari ürünleri veya hizmetleri tanıtmak yasaktır.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-number">7</div>
+                    <h3>Telif Hakkına Uy</h3>
+                    <p>Başkalarının çalışmalarına saygı duyun. Telif hakkı ihlali yasaktır.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-number">8</div>
+                    <h3>Çocuk Güvenliği</h3>
+                    <p>Çocuklara yönelik uygunsuz içerik kesinlikle yasaktır.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms Page -->
+    <div id="terms" class="page">
+        <div class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Hizmet Şartları</h1>
+                    <p>Lütfen kullanmadan önce dikkatle oku</p>
+                </div>
+                <div class="hero-visual">📋</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="legal-content">
+                <h3>1. Kabul Edilen Şartlar</h3>
+                <p>Bu web sitesini veya uygulamayı kullanarak, bu Hizmet Şartları'nı tamamen kabul eder ve yasal olarak bağlı olmak için anlaştığını onaylarsın.</p>
+
+                <h3>2. Hizmetin Kullanımı</h3>
+                <p>SecureLearn hizmeti eğitim ve bilgilendirme amaçlıdır. Hizmet şu amaçlar için kullanılamaz:</p>
+                <ul>
+                    <li>Yasadışı faaliyetlerde bulunmak</li>
+                    <li>Başka kişilerin haklarını ihlal etmek</li>
+                    <li>Zararlı yazılım yayması</li>
+                    <li>Hizmetin işleyişini engellemek</li>
+                </ul>
+
+                <h3>3. Kullanıcı Hesapları</h3>
+                <p>Bir hesap oluştururken gerçek bilgiler sağlamalısın. Hesabını yönetmek ve güvenliğini sağlamaktan sorumlusun.</p>
+
+                <h3>4. Fikri Mülkiyet</h3>
+                <p>SecureLearn'deki tüm içerik, tasarım ve metinler telif hakkı ile korunmaktadır. İzinsiz kullanımı yasaktır.</p>
+
+                <h3>5. Garantilerin Reddi</h3>
+                <p>Hizmet "olduğu gibi" sağlanmaktadır. SecureLearn hiçbir garanti vermemektedir.</p>
+
+                <h3>6. Sorumluluk Sınırlaması</h3>
+                <p>SecureLearn, hizmetin kullanımından kaynaklanan herhangi bir zarar için sorumlu olmayacaktır.</p>
+
+                <h3>7. Değişiklikler</h3>
+                <p>SecureLearn bu şartları herhangi bir zaman değiştirebilir. Değişiklikler web sitede yayınlandığında yürürlüğe girer.</p>
+
+                <h3>8. İletişim</h3>
+                <p>Sorular için: <strong>legal@securelearn.com</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Page -->
+    <div id="privacy" class="page">
+        <div class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Gizlilik Politikası</h1>
+                    <p>Verileriniz bizim için önemli</p>
+                </div>
+                <div class="hero-visual">🔒</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="legal-content">
+                <h3>1. Toplanan Bilgiler</h3>
+                <p>SecureLearn aşağıdaki bilgileri toplamaktadır:</p>
+                <ul>
+                    <li>Ad, e-posta ve kayıt bilgileri</li>
+                    <li>İlerleme ve öğrenme verileri</li>
+                    <li>IP adresi ve tarayıcı bilgileri</li>
+                    <li>Web sitede gezinme verileri</li>
+                </ul>
+
+                <h3>2. Veri Kullanımı</h3>
+                <p>Toplanan veriler şu amaçlar için kullanılır:</p>
+                <ul>
+                    <li>Hizmet sunmak ve iyileştirmek</li>
+                    <li>Kişiselleştirilmiş içerik sağlamak</li>
+                    <li>İletişim ve destek sunmak</li>
+                    <li>Güvenlik tehditleri tespit etmek</li>
+                    <li>Hukuki gerekliliklere uyum sağlamak</li>
+                </ul>
+
+                <h3>3. Veri Paylaşımı</h3>
+                <p>SecureLearn, kişisel verilerinizi hukuki yükümlülükler hariç üçüncü tarafla paylaşmaz.</p>
+
+                <h3>4. Veri Güvenliği</h3>
+                <p>SecureLearn, endüstri standardı şifreleme ve güvenlik önlemleri kullanarak verilerinizi korur.</p>
+
+                <h3>5. Çerezler</h3>
+                <p>SecureLearn, oturum yönetimi ve analitik için çerezler kullanır.</p>
+
+                <h3>6. Veri Saklama</h3>
+                <p>Kişisel veriler, gerekli olduğu sürece saklanır. Herhangi bir zaman hesabını sil.</p>
+
+                <h3>7. Haklarınız</h3>
+                <p>Hangi verilerin toplandığını öğrenme, verileri düzeltme veya silme hakkına sahipsiniz.</p>
+
+                <h3>8. KVKK Uyumu</h3>
+                <p>SecureLearn, Türk Cumhuriyeti Kişisel Verileri Koruma Kanunu (KVKK) ile uyumludur.</p>
+
+                <h3>9. İletişim</h3>
+                <p>Gizlilik hakkında sorular için: <strong>privacy@securelearn.com</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Bağlantılar</h4>
+                    <ul>
+                        <li><a href="#" onclick="showPage('home'); return false;">Ana Sayfa</a></li>
+                        <li><a href="#" onclick="showPage('about'); return false;">Hakkımızda</a></li>
+                        <li><a href="#" onclick="showPage('help'); return false;">Yardım</a></li>
+                        <li><a href="#" onclick="alert('Blog')">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hukuk</h4>
+                    <ul>
+                        <li><a href="#" onclick="showPage('terms'); return false;">Hizmet Şartları</a></li>
+                        <li><a href="#" onclick="showPage('privacy'); return false;">Gizlilik Politikası</a></li>
+                        <li><a href="#" onclick="showPage('community'); return false;">Topluluk Kuralları</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sosyal</h4>
+                    <ul>
+                        <li><a href="#" onclick="alert('Twitter')">Twitter</a></li>
+                        <li><a href="#" onclick="alert('Facebook')">Facebook</a></li>
+                        <li><a href="#" onclick="alert('Instagram')">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SecureLearn. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
