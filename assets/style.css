@@ -118,7 +118,6 @@ nav {
 
 /* Page Container */
 .page {
-    padding: 2rem;
     display: none;
 }
 
@@ -141,6 +140,7 @@ nav {
 /* Hero Section */
 .hero {
     padding: 60px 20px;
+    margin: 2rem;
     text-align: center;
 }
 
@@ -156,8 +156,8 @@ nav {
 .hero-text h1 {
     font-size: 48px;
     font-weight: 800;
-    margin-bottom: 20px;
     color: var(--text);
+    margin-bottom: 20px;
     line-height: 1.2;
 }
 
@@ -219,7 +219,7 @@ nav {
 /* Container */
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 2rem;
     padding: 80px 20px;
 }
 
