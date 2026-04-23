@@ -501,10 +501,10 @@ nav {
 .course-card.orange { --card-accent: var(--color-orange); }
 .course-card.red { --card-accent: var(--color-offensive); }
 
-.course-card:hover {
-    border-color: rgba(236, 254, 1, 0.3);
-    transform: translateY(-4px);
-}
+.course-card.green:hover { border-color: var(--color-defensive); }
+.course-card.blue:hover { border-color: var(--color-blue); }
+.course-card.orange:hover { border-color: var(--color-orange); }
+.course-card.red:hover { border-color: var(--color-offensive); }
 
 .course-card h3 {
     font-size: 1.125rem;
