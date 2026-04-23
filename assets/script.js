@@ -1,23 +1,49 @@
-function showPage(pageId) {
-    const pages = document.querySelectorAll('.page');
-    pages.forEach(page => page.classList.remove('active'));
-    const selectedPage = document.getElementById(pageId);
-    if (selectedPage) {
-        selectedPage.classList.add('active');
-        window.scrollTo(0, 0);
-    }
-}
+// Smooth scroll for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+});
 
-function toggleFAQ(element) {
-    const answer = element.nextElementSibling;
-    const toggle = element.querySelector('.faq-toggle');
-    answer.classList.toggle('open');
-    toggle.classList.toggle('open');
-}
+// Scroll animation for elements
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
 
-function handleSubmit(event) {
-    event.preventDefault();
-    const name = document.getElementById('name').value;
-    alert(`Teşekkürler ${name}! Mesajınız başarıyla gönderildi. 🎉`);
-    event.target.reset();
-}
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.scroll-fade').forEach(el => {
+    observer.observe(el);
+});
+
+// Active navigation on scroll
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section[id]');
+    let current = '';
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (scrollY >= sectionTop - 200) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').slice(1) === current) {
+            link.classList.add('active');
+        }
+    });
+});
