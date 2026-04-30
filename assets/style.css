@@ -327,7 +327,7 @@ nav {
     border: none;
     cursor: pointer;
     transition: all 0.15s ease;
-    clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+    clip-path: polygon(0 0, 92% 0, 100% 25%, 100% 100%, 8% 100%, 0 75%);
 }
 
 .btn-start:hover {
@@ -409,7 +409,7 @@ nav {
     color: var(--color-bg);
     text-transform: uppercase;
     transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-    clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+    clip-path: polygon(0 0, 92% 0, 100% 25%, 100% 100%, 8% 100%, 0 75%);
     border: none;
     cursor: pointer;
 }
